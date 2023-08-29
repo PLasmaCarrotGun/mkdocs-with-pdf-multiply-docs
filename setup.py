@@ -3,8 +3,8 @@ import io
 from setuptools import find_packages, setup
 
 setup(
-    name='mkdocs-with-pdf',
-    version='0.9.3',
+    name='mkdocs-with-pdf-multiply-docs',
+    version='0.0.1',
     description='Generate a single PDF file from MkDocs repository',  # noqa E501
     long_description=io.open('README.md', encoding='utf8').read(),
     long_description_content_type='text/markdown',
@@ -36,7 +36,7 @@ setup(
     include_package_data=True,
     entry_points={
         'mkdocs.plugins': [
-            'with-pdf = mkdocs_with_pdf.plugin:WithPdfPlugin'
+            'with-pdf-multiply-docs = mkdocs_with_pdf.plugin:WithPdfPlugin'
         ]
     }
 )
