@@ -16,7 +16,7 @@ class Options(object):
         ('debug_html', config_options.Type(bool, default=False)),
         ('show_anchors', config_options.Type(bool, default=False)),
 
-        ('docs_dir', config_options.Type(str, default="")),
+        ('docs_dir', config_options.Type(str, default=None)),
 
         ('output_path', config_options.Type(str, default="pdf/document.pdf")),
         ('theme_handler_path', config_options.Type(str, default=None)),
