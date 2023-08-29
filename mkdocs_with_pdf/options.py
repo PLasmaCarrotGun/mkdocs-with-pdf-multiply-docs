@@ -16,6 +16,8 @@ class Options(object):
         ('debug_html', config_options.Type(bool, default=False)),
         ('show_anchors', config_options.Type(bool, default=False)),
 
+        ('docs_dir', config_options.Type(str, default="")),
+
         ('output_path', config_options.Type(str, default="pdf/document.pdf")),
         ('theme_handler_path', config_options.Type(str, default=None)),
 
@@ -51,6 +53,8 @@ class Options(object):
         self.verbose = local_config['verbose']
         self.debug_html = local_config['debug_html']
         self.show_anchors = local_config['show_anchors']
+
+        self.docs_dir = local_config.get('docs_dir', None)
 
         self.output_path = local_config.get('output_path', None)
 
